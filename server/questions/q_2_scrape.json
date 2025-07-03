@@ -1,0 +1,7 @@
+{
+    "id": "2",
+    "title": "Web Scrape Book Data",
+    "description": "Write a Python script to scrape data from http://books.toscrape.com/catalogue/page-1.html.\nYour program must:\n1. Extract the title, price, and availability of each book listed on the page.\n2. Store the data in a CSV file named books_output.csv.\n3. Use requests and BeautifulSoup libraries only.\n4. Ensure your script handles at least 20 books.",
+    "test_type": "csv_comparison",
+    "expected_output_file": "solution_2.csv"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "3",
+    "title": "House Price Prediction",
+    "description": "Build a linear regression model to predict house prices.\nYour program must:\n1. Be contained in a single script.\n2. Load the dataset from 'house_prices.csv', which will be in the same directory as your script when run.\n3. Define a function named `predict_prices(train_data_path, test_features)`.\n   - `train_data_path` will be the path to the CSV file.\n   - `test_features` will be a pandas DataFrame with 'Size' and 'Bedrooms' columns for which to predict prices.\n   - This function should return a NumPy array of price predictions.\n4. You must use pandas and scikit-learn.",
+    "test_type": "linear_regression",
+    "solution_file": "solution_3.py",
+    "data_file": "house_prices.csv"
+}
