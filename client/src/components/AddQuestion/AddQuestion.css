@@ -1,0 +1,156 @@
+/* :root for defining global variables */
+:root {
+    --primary-color: #4285f4;
+    --secondary-color: #34a853;
+    --background-color: #ffffff;
+    --border-color: #e0e0e0;
+    --input-focus-color: #4285f4;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: #f1f3f4;
+    color: #202124;
+    font-size: var(--font-size-base);
+}
+
+/* Main Container */
+.question-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.question-container h1 {
+    font-size: var(--font-size-large);
+    color: #202124;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Form Styles */
+.question-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Form Item Styles */
+.question-form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: var(--font-size-medium);
+    color: #5f6368;
+    font-weight: 500;
+}
+
+/* Input & Textarea Styles */
+.input-field, .textarea-field, .test-case-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: var(--font-size-base);
+    transition: border-color 0.3s;
+}
+
+.input-field:focus, .textarea-field:focus, .test-case-input:focus {
+    border-color: var(--input-focus-color);
+    outline: none;
+}
+
+/* Textarea specific */
+.textarea-field {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Button Styles */
+.submit-button, .add-test-case-button {
+    padding: 10px 20px;
+    font-size: var(--font-size-medium);
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.submit-button:hover, .add-test-case-button:hover {
+    background-color: #357ae8;
+}
+
+/* Error and Success Message Styles */
+.message {
+    font-size: var(--font-size-medium);
+    margin-top: 16px;
+    text-align: center;
+}
+
+.error-message {
+    color: #e74c3c;
+}
+
+.success-message {
+    color: #34a853;
+}
+
+/* Test Case Section */
+.test-case-section {
+    margin-top: 20px;
+}
+
+.test-case-section h3 {
+    font-size: var(--font-size-medium);
+    color: #202124;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+/* Test Case Input Fields */
+.question-testcase-form-element {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.test-case-input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Add Test Case Button */
+.add-test-case-button {
+    background-color: #f1f3f4;
+    color: #202124;
+    font-weight: 500;
+    border: 1px solid #e0e0e0;
+}
+
+.add-test-case-button:hover {
+    background-color: #e0e0e0;
+}
